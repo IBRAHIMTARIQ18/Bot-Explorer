@@ -26,14 +26,16 @@ class App extends Component {
     });
     return (
       <div className="tc">
-        <h1 className="f1"> BOT EXPLORER </h1>
-        <p className="description-para">
+        <h1 className="f1 title"> BOT EXPLORER </h1>
+        <p className="description-para title">
           Discover AI Robots by searching through a futuristic directory of
           intelligent digital entities.
         </p>
+        <div className="particles"></div>
         <SearchBox searchChange={this.onSearchChange} />
         <Scroll>
           <CardList robots={filteredRobots} />
+          {filteredRobots.length === 0 && <h2>No robots found.</h2>}
         </Scroll>
         <h1 className="f3"> BUILT BY M.IBRAHIM TARIQ </h1>
       </div>
