@@ -1,12 +1,29 @@
 @font-face {
-    font-family: 'SEGA LOGO FONT';
-    font-style: normal;
-    font-weight: normal;
-    src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
-    }
+  font-family: "SEGA LOGO FONT";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("SEGA LOGO FONT"),
+    url("SEGA.woff") format("woff");
+}
 
 h1 {
-    font-family: 'SEGA LOGO FONT';
-    font-weight: 200;
-    color: rgb(52, 246, 250);
+  font-family: "SEGA LOGO FONT";
+  font-weight: 200;
+  color: rgb(250, 233, 52);
+}
+
+.second-heading {
+  font-family: "SEGA LOGO FONT";
+  font-weight: 100;
+  font-size: 1.9rem;
+  color: rgb(255, 251, 204);
+  margin: 5px auto;
+}
+
+.description-para {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  color: rgb(255, 255, 255);
 }
