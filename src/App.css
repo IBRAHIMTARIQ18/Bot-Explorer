@@ -22,8 +22,8 @@ h1 {
 }
 
 .search-box {
-  width: 350px;
-  padding: 18px 24px;
+  width: 450px;
+  padding: 18px 30px;
   border-radius: 8px;
   border: 1px solid white;
   outline: none;
@@ -71,4 +71,55 @@ h1 {
 
 .card-container:hover::before {
   transform: translateX(100%);
+}
+
+.title {
+  background: linear-gradient(90deg, #fff, #f8d838, #5cf6cd);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientText 6s linear infinite;
+}
+
+.particles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 255, 255, 0.768) 2px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 80% 50%,
+      rgba(255, 255, 255, 0.749) 2px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 60% 80%,
+      rgba(255, 255, 255, 0.718) 2px,
+      transparent 2px
+    );
+  background-size: 300px 300px;
+  animation: particleMove 5s linear infinite;
+}
+
+@keyframes particleMove {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes gradientText {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 300%;
+  }
 }
