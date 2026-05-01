@@ -27,9 +27,9 @@ class App extends Component {
     return (
       <div className="tc">
         <h1 className="f1"> BOT EXPLORER </h1>
-        <h2 className="second-heading">Discover AI Robots</h2>
         <p className="description-para">
-          Search through a futuristic directory of intelligent digital entities.
+          Discover AI Robots by searching through a futuristic directory of
+          intelligent digital entities.
         </p>
         <SearchBox searchChange={this.onSearchChange} />
         <Scroll>

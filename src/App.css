@@ -9,21 +9,34 @@
 
 h1 {
   font-family: "SEGA LOGO FONT";
-  font-weight: 200;
-  color: rgb(250, 233, 52);
-}
-
-.second-heading {
-  font-family: "SEGA LOGO FONT";
   font-weight: 100;
-  font-size: 1.9rem;
-  color: rgb(255, 251, 204);
-  margin: 5px auto;
+  color: rgb(250, 233, 52);
 }
 
 .description-para {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 200;
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin: 2px auto;
   color: rgb(255, 255, 255);
+}
+
+.search-box {
+  width: 350px;
+  padding: 18px 24px;
+  border-radius: 8px;
+  border: 1px solid white;
+  outline: none;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease;
+  margin: 22px auto;
+}
+
+.search-box:focus {
+  transform: scale(1.03);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
